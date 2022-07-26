@@ -1,0 +1,77 @@
+.wrapper {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.image {
+  flex: 1 0 50%;
+}
+.imagePlaceholder {
+  max-width: 370px;
+  height: 100%;
+}
+.content {
+  flex: 0 0 50%;
+  padding: 40px 0 0 50px;
+}
+.name {
+  font-family: "Lora", sans-serif;
+  font-size: 24px;
+}
+.rating {
+  margin-bottom: 20px;
+}
+.ratingNumber {
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 12px;
+}
+.price {
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.listTitle {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+.list {
+  margin-bottom: 30px;
+}
+.item {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+.feature {
+  display: inline-block;
+  min-width: 65px;
+  margin-right: 15px;
+}
+.notice {
+  max-width: 400px;
+  p {
+    font-size: 12px;
+    line-height: 120%;
+  }
+}
+.buttonContainer {
+  display: flex;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .image {
+    flex: 1 0 100%;
+  }
+  .imagePlaceholder {
+    min-width: 100%;
+  }
+  .content {
+    flex: 0 0 100%;
+    padding: 30px 0;
+  }
+}

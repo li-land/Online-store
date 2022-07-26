@@ -1,0 +1,171 @@
+.cart {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list {
+  flex: 1 1 auto;
+  overflow-x: auto;
+  span {
+    display: inline-block;
+    min-width: 110px;
+  }
+}
+.checkout {
+  padding-top: 50px;
+  flex: 0 0 25%;
+  margin-left: 20px;
+  span {
+    line-height: 150%;
+  }
+}
+.listHead {
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.nameBox {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+}
+.priceBox {
+  flex: 0 1 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  div {
+    width: 100px;
+    text-align: center;
+  }
+}
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.image {
+  display: block;
+  margin-right: 20px;
+  width: 60px;
+}
+.itemBody {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+}
+.name {
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+.itemButton {
+  background: transparent;
+  color: #ff4d4f;
+  font-size: 11px;
+  text-align: left;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.listTotal {
+  display: flex;
+  border-top: 1px solid #ccc;
+  height: 50px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+}
+.totalPrice {
+  width: 100px;
+  text-align: center;
+  font-weight: 500;
+}
+.linkText {
+  margin-top: 10px;
+  line-height: 150%;
+}
+.link {
+  margin-left: 5px;
+  color: #28647a;
+}
+.warning {
+  display: block;
+  text-align: left;
+  color: #ff4d4f;
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  height: 50px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.bookingItem {
+  width: 150px;
+}
+
+.bookingListHead {
+  text-align: center;
+}
+.booking {
+  text-align: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0;
+}
+.modalText {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1023px) {
+  .booking {
+    border-bottom: none;
+  }
+  .listHead {
+    border: none;
+  }
+  .listTotal {
+    border: none;
+  }
+  .bookingList {
+    font-size: 12px;
+  }
+  .bookingItem {
+    min-width: 110px;
+  }
+}
+@media (max-width: 874px) {
+  .checkout {
+    padding-top: 30px;
+    flex: 0 0 50%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .checkout {
+    flex: 0 0 80%;
+  }
+  .nameBox {
+    min-width: 240px;
+  }
+}
+@media (max-width: 424px) {
+  .checkout {
+    padding-top: 10px;
+    flex: 0 0 100%;
+  }
+}

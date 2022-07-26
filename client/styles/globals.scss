@@ -1,0 +1,133 @@
+@import "~antd/dist/antd.css";
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Montserrat:wght@200;400;500;700&family=Smooch&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body,
+#__next {
+  height: 100%;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+  font-weight: 400;
+  color: #002329;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.title {
+  font-family: "Lora", sans-serif;
+  font-size: 24px;
+}
+.list {
+  display: flex;
+  justify-content: center;
+}
+.item {
+  margin-bottom: 10px;
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+.link {
+  cursor: pointer;
+  color: inherit;
+  &:hover {
+    color: #08979c;
+  }
+  &:active {
+    color: inherit;
+  }
+}
+.linkCatalog {
+  padding: 5px;
+  border: 1px solid rgb(231, 230, 230);
+  border-radius: 8px;
+}
+.buttonBox {
+  width: 240px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1023px) {
+  .linkCatalog {
+    display: none;
+  }
+}
+@media (max-width: 424px) {
+  .buttonBox {
+    width: 100%;
+  }
+}

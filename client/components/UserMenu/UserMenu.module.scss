@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+}
+.name {
+  margin-right: 15px;
+}
+.link {
+  cursor: pointer;
+  color: inherit;
+  &:hover {
+    color: #08979c;
+  }
+  &:active {
+    color: inherit;
+  }
+  font-size: 16px;
+
+  margin-right: 5px;
+}
+.button {
+  background: transparent;
+  margin-right: 15px;
+}
+.cartBox {
+  display: flex;
+  width: 30px;
+}
+.productAmount {
+  font-size: 12px;
+  font-weight: 600;
+}

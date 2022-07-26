@@ -1,0 +1,22 @@
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.code {
+  font-family: "Lora", sans-serif;
+  font-size: 80px;
+  margin-bottom: 20px;
+}
+.content {
+  text-align: center;
+}
+.info {
+  font-size: 16px;
+  margin-bottom: 10px;
+  max-width: 220px;
+  line-height: 150%;
+}
+.button {
+  max-width: 100px;
+}

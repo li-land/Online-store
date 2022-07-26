@@ -1,0 +1,26 @@
+.list {
+  margin: 0 -10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper {
+  flex: 0 0 25%;
+  padding: 10px;
+  min-width: 250px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1120px) {
+  .wrapper {
+    flex: 0 0 calc(100% / 3);
+  }
+}
+@media (max-width: 860px) {
+  .wrapper {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width: 767px) {
+  .wrapper {
+    flex: 0 0 100%;
+  }
+}

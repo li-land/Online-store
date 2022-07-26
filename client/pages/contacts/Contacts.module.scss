@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.map {
+  flex: 1 1 auto;
+}
+.list {
+  margin: 30px 30px 0 0;
+}
+.item {
+  display: flex;
+  margin-bottom: 15px;
+}
+.itemTitle {
+  color: #707070;
+  font-weight: 100;
+  margin-right: 10px;
+}
+.itemText {
+  font-size: 16px;
+}
+.link {
+  cursor: pointer;
+  color: inherit;
+  &:hover {
+    color: #08979c;
+  }
+  &:active {
+    color: inherit;
+  }
+}

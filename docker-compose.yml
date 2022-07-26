@@ -1,0 +1,48 @@
+version: "3.0"
+
+services:
+  frontend:
+    container_name: onlineStore-frontend
+    build:
+      context: ./client
+    env_file:
+      - ./client/.env
+    volumes:
+      - ./client:/app-client
+      - /app-client/node_modules
+    ports:
+      - "3000:3000"
+    command: npm run dev
+    restart: always
+    depends_on:
+      - backend
+  backend:
+    container_name: onlineStore-backend
+    build:
+      context: ./server
+    env_file:
+      - ./server/.env
+    volumes:
+      - ./server:/app-server
+      - /app-server/node_modules
+    ports:
+      - "4000:4000"
+    command: npm run start:dev
+    depends_on:
+      - postgres
+    restart: always
+  db:
+    container_name: db
+    image: postgres:12
+    env_file:
+      - ./server/.env
+    environment:
+      PGDATA: /var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresdata:/var/lib/postgresql/data
+      - ./db_dump:/db_dump
+    restart: always
+volumes:
+  postgresdata:

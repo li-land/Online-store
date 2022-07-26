@@ -1,0 +1,35 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  height: 50px;
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.linkText {
+  margin-top: 10px;
+}
+.link {
+  margin-left: 5px;
+  color: #28647a;
+}
+.warning {
+  display: block;
+  text-align: left;
+  color: #ff4d4f;
+}
